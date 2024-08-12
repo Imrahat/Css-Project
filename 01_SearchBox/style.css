@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(red,blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    max-width: 400px;
+    width: 100%;
+    /* background-color: red; */
+}
+.search_box{
+   height: 50px;
+   /* height: 45px; */
+    max-width: 45px;
+    /* max-width: 50px; */
+   /* width: 100%; */
+   /* background-color: blue;  */
+   margin: auto;
+   position: relative;
+   border-radius: 25px;
+   transition: all 0.3s ease;
+}
+#check:checked ~ .search_box{
+   max-width: 380px;
+   /* border-radius: 0px; */
+   /* height: 50px; */
+}
+
+.search_box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background:#fff;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+
+}
+.search_box .icon{
+    position: absolute;
+    right: -2px;
+    /* right: 0; */
+    top: 0;
+    width: 50px;
+   background:linear-gradient(130deg,red,blue);
+    height: 100%;
+    /* height:50px; */
+    border-radius:  25px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+
+}
+#check:checked ~ .search_box .icon{
+   border-radius: 0 25px 25px 0;
+   /* width: 60px; */
+}
+#check{
+    display: none;
+}
+
+
+/* checked and unchecked */
+
